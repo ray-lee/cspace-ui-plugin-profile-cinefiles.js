@@ -3,6 +3,7 @@ import media from './media';
 import organization from './organization';
 import person from './person';
 import work from './work';
+import collectionobject from './collectionobject';
 
 export default [
   concept,
@@ -10,6 +11,7 @@ export default [
   organization,
   person,
   work,
+  collectionobject,
   () => ({
     recordTypes: {
       citation: {
