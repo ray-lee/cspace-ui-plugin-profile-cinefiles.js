@@ -41,4 +41,8 @@ export default {
   'field.works_common.termQualifier.name': 'Article',
 
   'field.media_common.title.name': 'File name',
+
+  'panel.collectionobject.reference': 'External document URL information',
+  'field.collectionobjects_common.reference.name': 'Source',
+  'field.collectionobjects_common.referenceNote.name': 'Note',
 };
