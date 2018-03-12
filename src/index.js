@@ -26,13 +26,4 @@ module.exports = () => ({
     },
   },
   plugins: plugins.map(plugin => plugin()),
-  recordTypes: {
-    location: {
-      vocabularies: {
-        offsite: {
-          disabled: true,
-        },
-      },
-    },
-  },
 });
