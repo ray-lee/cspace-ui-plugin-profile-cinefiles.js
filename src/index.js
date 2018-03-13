@@ -25,5 +25,14 @@ module.exports = () => ({
       version: cspaceUIPluginProfileCineFiles.packageVersion,
     },
   },
+  recordTypes: {
+    organization: {
+      vocabularies: {
+        ulan: {
+          disabled: true,
+        },
+      },
+    },
+  },
   plugins: plugins.map(plugin => plugin()),
 });
