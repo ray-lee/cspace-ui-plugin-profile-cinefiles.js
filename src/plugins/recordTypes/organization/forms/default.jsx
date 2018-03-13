@@ -57,13 +57,8 @@ const template = (pluginContext) => {
           <Col>
             <Field name="foundingCity" subpath="ns2:organizations_cinefiles" />
             <Field name="foundingState" subpath="ns2:organizations_cinefiles" />
-            <Field name="foundingDateGroup" />
             <Field name="foundingPlace" />
-            <Field name="dissolutionDateGroup" />
-
-            <Field name="contactNames">
-              <Field name="contactName" />
-            </Field>
+            <Field name="foundingDateGroup" />
           </Col>
 
           <Col>
@@ -73,6 +68,14 @@ const template = (pluginContext) => {
             <Field name="accessCode" subpath="ns2:organizations_cinefiles" />
           </Col>
         </Cols>
+
+        <Field name="memberGroupList" subpath="ns2:organizations_cinefiles" >
+          <Field name="memberGroup" >
+            <Field name="member" />
+            <Field name="memberNote" />
+            <Field name="memberAuthority" />
+          </Field>
+        </Field>
       </Panel>
 
       <Subrecord name="contact" />

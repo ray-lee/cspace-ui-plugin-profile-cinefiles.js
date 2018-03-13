@@ -3,8 +3,8 @@ import { defineMessages } from 'react-intl';
 export default (pluginContext) => {
   const {
     TextInput,
-//     OptionPickerInput,
-//     CheckboxInput,
+    OptionPickerInput,
+    AutocompleteInput,
     TermPickerInput,
     CompoundInput,
   } = pluginContext.inputComponents;
@@ -29,13 +29,6 @@ export default (pluginContext) => {
               props: {
                 source: 'country',
               },
-            },
-          },
-        },
-        historyNotes: {
-          historyNote: {
-            [config]: {
-              repeating: false,
             },
           },
         },
@@ -99,11 +92,18 @@ export default (pluginContext) => {
                 messages: defineMessages({
                   name: {
                     id: 'field.organizations_cinefiles.member.name',
-                    defaultMessage: 'member',
+                    defaultMessage: 'Name',
+                  },
+                  fullName: {
+                    id: 'field.organizations_cinefiles.member.fullName',
+                    defaultMessage: 'Member name',
                   },
                 }),
                 view: {
-                  type: TextInput,
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'person/local',
+                  },
                 },
               },
             },
@@ -112,7 +112,11 @@ export default (pluginContext) => {
                 messages: defineMessages({
                   name: {
                     id: 'field.organizations_cinefiles.memberNote.name',
-                    defaultMessage: 'memberNote',
+                    defaultMessage: 'Note',
+                  },
+                  fullName: {
+                    id: 'field.organizations_cinefiles.memberNote.fullName',
+                    defaultMessage: 'Member note',
                   },
                 }),
                 view: {
@@ -125,11 +129,18 @@ export default (pluginContext) => {
                 messages: defineMessages({
                   name: {
                     id: 'field.organizations_cinefiles.memberAuthority.name',
-                    defaultMessage: 'memberAuthority',
+                    defaultMessage: 'Authority',
+                  },
+                  fullName: {
+                    id: 'field.organizations_cinefiles.memberAuthority.fullName',
+                    defaultMessage: 'Member authority',
                   },
                 }),
                 view: {
-                  type: TextInput,
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'citation/local',
+                  },
                 },
               },
             },
@@ -144,7 +155,10 @@ export default (pluginContext) => {
               },
             }),
             view: {
-              type: TextInput,
+              type: OptionPickerInput,
+              props: {
+                source: 'accessCodes',
+              },
             },
           },
         },
