@@ -22,4 +22,7 @@ export default {
 
   'vocab.citation.local.name': 'Citations',
   'vocab.citation.collectionName.name': 'Citations',
+
+  'vocab.concept.associated.name': 'Subjects',
+  'vocab.concept.collectionName.name': 'Subjects',
 };
