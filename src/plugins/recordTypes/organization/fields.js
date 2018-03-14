@@ -151,7 +151,7 @@ export default (pluginContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.organizations_cinefiles.accessCode.name',
-                defaultMessage: 'accessCode',
+                defaultMessage: 'Publication access code',
               },
             }),
             view: {
