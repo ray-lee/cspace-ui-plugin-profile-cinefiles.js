@@ -6,7 +6,7 @@ export default {
       name: {
         id: 'vocab.concept.genre.name',
         description: 'The name of the vocabulary.',
-        defaultMessage: 'Genres',
+        defaultMessage: 'Genre',
       },
       collectionName: {
         id: 'vocab.concept.genre.collectionName',
@@ -23,7 +23,7 @@ export default {
       name: {
         id: 'vocab.concept.theme.name',
         description: 'The name of the vocabulary.',
-        defaultMessage: 'Themes',
+        defaultMessage: 'Theme',
       },
       collectionName: {
         id: 'vocab.concept.theme.collectionName',
