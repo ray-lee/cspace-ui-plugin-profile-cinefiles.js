@@ -1,4 +1,7 @@
+import concept from './concept';
+
 export default [
+  concept,
   () => ({
     recordTypes: {
       citation: {

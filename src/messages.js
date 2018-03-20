@@ -14,12 +14,15 @@ export default {
   'footer.feedback': 'Contact UC Berkeley CollectionSpace support',
   'footer.feedbackUrl': 'mailto:cspace-support@lists.berkeley.edu',
 
-  'vocab.location.local.name': 'Locations',
+  'vocab.location.local.name': 'Location',
   'vocab.location.local.collectionName': 'Storage Locations',
 
-  'vocab.place.local.name': 'Places',
+  'vocab.place.local.name': 'Place',
   'vocab.place.local.collectionName': 'Places',
 
-  'vocab.citation.local.name': 'Citations',
-  'vocab.citation.collectionName.name': 'Citations',
+  'vocab.citation.local.name': 'Citation',
+  'vocab.citation.local.collectionName': 'Citations',
+
+  'vocab.concept.associated.name': 'Subject',
+  'vocab.concept.associated.collectionName': 'Subjects',
 };
