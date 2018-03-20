@@ -1,10 +1,12 @@
 import concept from './concept';
+import media from './media';
 import organization from './organization';
 import person from './person';
 import work from './work';
 
 export default [
   concept,
+  media,
   organization,
   person,
   work,
