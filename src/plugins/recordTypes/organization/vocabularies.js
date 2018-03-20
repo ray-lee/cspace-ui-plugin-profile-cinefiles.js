@@ -6,7 +6,7 @@ export default {
       name: {
         id: 'vocab.organization.committee.name',
         description: 'The name of the vocabulary.',
-        defaultMessage: 'Committees',
+        defaultMessage: 'Committee',
       },
       collectionName: {
         id: 'vocab.organization.committee.collectionName',
@@ -15,7 +15,7 @@ export default {
       },
     }),
     serviceConfig: {
-      servicePath: 'urn:cspace:name(organization)',
+      servicePath: 'urn:cspace:name(committee)',
     },
     sortOrder: 0,
   },

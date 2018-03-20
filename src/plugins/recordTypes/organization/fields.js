@@ -14,11 +14,6 @@ export default (pluginContext) => {
     configKey: config,
   } = pluginContext.configHelpers;
 
-//   const {
-    // DATA_TYPE_INT,
-    // DATA_TYPE_BOOL,
-//   } = pluginContext.dataTypes;
-
   return {
     document: {
       'ns2:organizations_common': {
@@ -28,6 +23,15 @@ export default (pluginContext) => {
               type: TermPickerInput,
               props: {
                 source: 'country',
+              },
+            },
+          },
+        },
+        orgTermGroupList: {
+          orgTermGroup: {
+            termStatus: {
+              [config]: {
+                defaultValue: 'provisional',
               },
             },
           },
@@ -44,7 +48,7 @@ export default (pluginContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.organizations_cinefiles.foundingState.name',
-                defaultMessage: 'Founding state',
+                defaultMessage: 'Foundation state',
               },
             }),
             view: {
@@ -57,7 +61,7 @@ export default (pluginContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.organizations_cinefiles.foundingCity.name',
-                defaultMessage: 'Founding city',
+                defaultMessage: 'Foundation city',
               },
             }),
             view: {
@@ -76,7 +80,7 @@ export default (pluginContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.organizations_cinefiles.memberGroup.name',
-                  defaultMessage: 'Members',
+                  defaultMessage: 'Member',
                 },
               }),
               repeating: true,
