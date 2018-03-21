@@ -16,23 +16,23 @@ export default () => ({
       ],
       messages: defineMessages({
         'PFA Staff Only': {
-          id: 'option.collections.PFA Staff Only',
-          defaultMessage: 'PFA Staff Only',
+          id: 'option.accessCodes.PFA Staff Only',
+          defaultMessage: 'PFA staff only',
         },
         'In House Only': {
-          id: 'option.collections.In House Only',
-          defaultMessage: 'In House Only',
+          id: 'option.accessCodes.In House Only',
+          defaultMessage: 'In house only',
         },
         'Campus (UCB)': {
-          id: 'option.collections.Campus (UCB)',
+          id: 'option.accessCodes.Campus (UCB)',
           defaultMessage: 'Campus (UCB)',
         },
         'Education (*.edu)': {
-          id: 'option.collections.Education (*.edu)',
+          id: 'option.accessCodes.Education (*.edu)',
           defaultMessage: 'Education (*.edu)',
         },
         World: {
-          id: 'option.collections.World',
+          id: 'option.accessCodes.World',
           defaultMessage: 'World',
         },
       }),

@@ -17,6 +17,5 @@ export default {
     serviceConfig: {
       servicePath: 'urn:cspace:name(committee)',
     },
-    sortOrder: 0,
   },
 };
