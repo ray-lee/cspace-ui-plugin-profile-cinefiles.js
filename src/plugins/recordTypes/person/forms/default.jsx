@@ -71,8 +71,8 @@ const template = (pluginContext) => {
           </Col>
 
           <Col>
-            <Field name="nameNote" />
             <Field name="bioNote" />
+            <Field name="nameNote" />
             <Field name="accessCode" subpath="ns2:persons_cinefiles" />
           </Col>
         </Row>
