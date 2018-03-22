@@ -25,4 +25,9 @@ export default {
 
   'vocab.concept.associated.name': 'Subject',
   'vocab.concept.associated.collectionName': 'Subjects',
+
+  'vocab.organization.local.name': 'Corporate Name',
+  'vocab.organization.local.collectionName': 'Corporate Names',
+  'field.organizations_common.foundingPlace.name': 'Foundation country',
+  'field.organizations_common.historyNote.name': 'Name note',
 };
