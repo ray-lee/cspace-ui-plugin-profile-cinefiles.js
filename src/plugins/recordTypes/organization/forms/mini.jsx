@@ -4,6 +4,10 @@ const template = (pluginContext) => {
   } = pluginContext.lib;
 
   const {
+    Row,
+  } = pluginContext.layoutComponents;
+
+  const {
     Field,
   } = pluginContext.recordComponents;
 
@@ -16,8 +20,11 @@ const template = (pluginContext) => {
         showSiblings={false}
       />
 
-      <Field name="foundingPlace" />
-      <Field name="foundingDateGroup" />
+      <Row>
+        <Field name="foundingPlace" />
+        <Field name="foundingDateGroup" />
+      </Row>
+
       <Field name="accessCode" subpath="ns2:organizations_cinefiles" />
     </Field>
   );

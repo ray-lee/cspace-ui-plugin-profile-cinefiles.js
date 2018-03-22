@@ -31,7 +31,9 @@ const template = (pluginContext) => {
               <Row>
                 <Field name="termLanguage" />
                 <Field name="termPrefForLang" />
+                <Col />
               </Row>
+
 
               <InputTable name="termSource">
                 <Field name="termSource" />
