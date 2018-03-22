@@ -24,7 +24,5 @@ export const computeWorkDisplayName = ({ data }) => {
   const title = data.get('termName' || '');
   const displayName = computeFullTitle(article, title);
 
-  return data
-    .set('termDisplayName', displayName)
-    .set('termDisplayNameSearch', displayName);
+  return data.set('termDisplayName', displayName);
 };

@@ -39,7 +39,7 @@ export default (pluginContext) => {
               view: {
                 type: AutocompleteInput,
                 props: {
-                  source: 'concept/genre', // TO DO: fix
+                  source: 'concept/genre',
                 },
               },
             },
@@ -85,7 +85,7 @@ export default (pluginContext) => {
               }),
               repeating: true,
               view: {
-                type: TermPickerInput,
+                type: OptionPickerInput,
                 props: {
                   source: 'language',
                 },
@@ -111,7 +111,7 @@ export default (pluginContext) => {
               view: {
                 type: AutocompleteInput,
                 props: {
-                  source: 'concept/subject',
+                  source: 'concept/associated',
                 },
               },
             },
@@ -139,17 +139,6 @@ export default (pluginContext) => {
                 },
               },
             },
-          },
-        },
-        termDisplayNameSearch: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.works_cinefiles.termDisplayNameSearch.name',
-                defaultMessage: 'Term display name',
-              },
-            }),
-            repeating: true,
           },
         },
       },
