@@ -65,10 +65,6 @@ export default (pluginContext) => {
         op: OP_EQ,
         path: 'ns2:works_cinefiles/themes/theme',
       },
-      {
-        op: OP_EQ,
-        path: 'ns2:works_common/workTermGroupList/workTermGroup/termFlag',
-      },
       ...extensions.core.advancedSearch,
     ],
   };
