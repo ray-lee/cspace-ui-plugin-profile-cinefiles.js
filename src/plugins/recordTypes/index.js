@@ -1,9 +1,11 @@
 import concept from './concept';
 import organization from './organization';
+import person from './person';
 
 export default [
   concept,
   organization,
+  person,
   () => ({
     recordTypes: {
       citation: {
