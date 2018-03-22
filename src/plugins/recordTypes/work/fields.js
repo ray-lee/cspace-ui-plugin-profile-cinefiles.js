@@ -191,7 +191,7 @@ export default (pluginContext) => {
         },
         workType: {
           [config]: {
-            defaultValue: 'urn:cspace:core.collectionspace.org:vocabularies:name(worktype):item:name(film)\'Film\'',
+            defaultValue: 'urn:cspace:cinefiles.cspace.berkeley.edu:vocabularies:name(worktype):item:name(film)\'Film\'',
           },
         },
         creatorGroupList: {
