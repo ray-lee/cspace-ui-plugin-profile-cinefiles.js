@@ -5,6 +5,7 @@ export default (pluginContext) => {
   const {
     CompoundInput,
     TermPickerInput,
+    TextInput,
     AutocompleteInput,
     OptionPickerInput,
   } = pluginContext.inputComponents;
@@ -155,6 +156,12 @@ export default (pluginContext) => {
                     readOnly: true,
                   },
                 },
+                searchView: {
+                  type: TextInput,
+                  props: {
+                    readOnly: false,
+                  },
+                },
               },
             },
             termQualifier: {
@@ -171,6 +178,15 @@ export default (pluginContext) => {
         },
         publisherGroupList: {
           publisherGroup: {
+            publisher: {
+              [config]: {
+                view: {
+                  props: {
+                    source: 'person/local,organization/local,organization/committee',
+                  },
+                },
+              },
+            },
             publisherType: {
               [config]: {
                 defaultValue: 'urn:cspace:cinefiles.cspace.berkeley.edu:vocabularies:name(workpublishertype):item:name(productioncompany)\'Production Company\'',
@@ -185,6 +201,15 @@ export default (pluginContext) => {
         },
         creatorGroupList: {
           creatorGroup: {
+            creator: {
+              [config]: {
+                view: {
+                  props: {
+                    source: 'person/local,organization/local,organization/committee',
+                  },
+                },
+              },
+            },
             creatorType: {
               [config]: {
                 defaultValue: 'urn:cspace:cinefiles.cspace.berkeley.edu:vocabularies:name(workcreatortype):item:name(director)\'Director\'',
