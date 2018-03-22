@@ -33,4 +33,6 @@ export default {
 
   'vocab.person.local.name': 'Person',
   'vocab.person.local.collectionName': 'Persons',
+
+  'field.persons_common.birthPlace.name': 'Country of birth',
 };
