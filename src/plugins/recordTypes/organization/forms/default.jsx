@@ -24,22 +24,14 @@ const template = (pluginContext) => {
             <Panel>
               <Row>
                 <Field name="termDisplayName" />
-                <Field name="termName" />
-                <Field name="termQualifier" />
+                <Field name="termType" />
                 <Field name="termStatus" />
               </Row>
 
               <Row>
-                <Field name="termType" />
-                <Field name="termFlag" />
                 <Field name="termLanguage" />
                 <Field name="termPrefForLang" />
               </Row>
-
-              <InputTable name="nameDetail">
-                <Field name="mainBodyName" />
-                <Field name="additionsToName" />
-              </InputTable>
 
               <InputTable name="termSource">
                 <Field name="termSource" />

@@ -30,7 +30,7 @@ export default (pluginContext) => {
         path: 'ns2:organizations_cinefiles/foundingState',
       },
       {
-        op: OP_CONTAIN,
+        op: OP_EQ,
         path: 'ns2:organizations_common/foundingPlace',
       },
       {

@@ -27,15 +27,6 @@ export default (pluginContext) => {
             },
           },
         },
-        orgTermGroupList: {
-          orgTermGroup: {
-            termStatus: {
-              [config]: {
-                defaultValue: 'provisional',
-              },
-            },
-          },
-        },
       },
       'ns2:organizations_cinefiles': {
         [config]: {
