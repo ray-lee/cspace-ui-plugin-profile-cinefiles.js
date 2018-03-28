@@ -30,4 +30,9 @@ export default {
   'vocab.organization.local.collectionName': 'Corporate Names',
   'field.organizations_common.foundingPlace.name': 'Foundation country',
   'field.organizations_common.historyNote.name': 'Name note',
+
+  'vocab.person.local.name': 'Person',
+  'vocab.person.local.collectionName': 'Persons',
+
+  'field.persons_common.birthPlace.name': 'Country of birth',
 };
