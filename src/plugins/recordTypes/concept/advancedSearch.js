@@ -22,7 +22,15 @@ export default (pluginContext) => {
       },
       {
         op: OP_EQ,
+        path: 'ns2:concepts_common/conceptTermGroupList/conceptTermGroup/termFlag',
+      },
+      {
+        op: OP_EQ,
         path: 'ns2:concepts_common/conceptTermGroupList/conceptTermGroup/termLanguage',
+      },
+      {
+        op: OP_EQ,
+        path: 'ns2:concepts_common/conceptRecordTypes/conceptRecordType',
       },
       ...extensions.core.advancedSearch,
     ],
