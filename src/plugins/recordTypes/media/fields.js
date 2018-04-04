@@ -1,21 +1,28 @@
 import { defineMessages } from 'react-intl';
 import { computeMediaTitle } from './utils';
 
-export default (pluginContext) => {
+export default (configContext) => {
   const {
     TextInput,
-  } = pluginContext.inputComponents;
+  } = configContext.inputComponents;
 
   const {
     configKey: config,
-  } = pluginContext.configHelpers;
+  } = configContext.configHelpers;
+
+  const {
+    Immutable,
+  } = configContext.lib;
 
   const {
     DATA_TYPE_INT,
-  } = pluginContext.dataTypes;
+  } = configContext.dataTypes;
 
   return {
     document: {
+      [config]: {
+        compute: args => computeMediaTitle(args, Immutable),
+      },
       'ns2:media_common': {
         identificationNumber: {
           [config]: {
@@ -23,9 +30,9 @@ export default (pluginContext) => {
           },
         },
         title: {
-          [config]: {
-            compute: computeMediaTitle,
-          },
+          // [config]: {
+          //   compute: computeMediaTitle,
+          // },
         },
       },
       'ns2:media_cinefiles': {
@@ -37,6 +44,7 @@ export default (pluginContext) => {
         page: {
           [config]: {
             required: true,
+            cloneable: false,
             dataType: DATA_TYPE_INT,
             messages: defineMessages({
               name: {

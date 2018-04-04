@@ -1,20 +1,17 @@
 /* eslint-disable import/prefer-default-export */
 
-export const computeMediaTitle = ({ subrecordData }) => {
+export const computeMediaTitle = ({ data, subrecordData }, Immutable) => {
   const blobCommonData = subrecordData.getIn(['blob', 'document', 'ns2:blobs_common']);
-  if (blobCommonData) {
-    const name = blobCommonData.get('name');
+  const page = data.getIn(['ns2:media_cinefiles', 'page']);
+  const name = blobCommonData.get('name');
+  const fileList = blobCommonData.get('file');
 
-    if (name) {
-      return name;
-    }
+  const fileName = fileList && fileList.length > 0 ? fileList[0].name : null;
+  const title = [name, page, fileName].filter(part => !!part).join(' ');
 
-    const fileList = blobCommonData.get('file');
-
-    if (fileList && fileList.length > 0) {
-      return fileList[0].name;
-    }
-  }
-  return null;
+  return Immutable.fromJS({
+    'ns2:media_common': {
+      title,
+    },
+  });
 };
-
