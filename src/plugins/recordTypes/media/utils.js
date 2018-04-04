@@ -7,7 +7,7 @@ export const computeMediaTitle = ({ data, subrecordData }, Immutable) => {
   const fileList = blobCommonData.get('file');
 
   const fileName = fileList && fileList.length > 0 ? fileList[0].name : null;
-  const title = [name, page, fileName].filter(part => !!part).join(' ');
+  const title = [page, name, fileName].filter(part => !!part).join(' - ');
 
   return Immutable.fromJS({
     'ns2:media_common': {

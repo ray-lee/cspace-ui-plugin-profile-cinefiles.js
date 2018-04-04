@@ -29,11 +29,7 @@ export default (configContext) => {
             required: false,
           },
         },
-        title: {
-          // [config]: {
-          //   compute: computeMediaTitle,
-          // },
-        },
+        title: {},
       },
       'ns2:media_cinefiles': {
         [config]: {
