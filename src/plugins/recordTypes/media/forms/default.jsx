@@ -21,8 +21,9 @@ const template = (pluginContext) => {
   return (
     <Field name="document">
       <Panel name="media" collapsible>
+        <Field name="page" subpath="ns2:media_cinefiles" />
+
         <Panel name="file" collapsible>
-          <Field name="page" subpath="ns2:media_cinefiles" />
           <Subrecord name="blob" showDetachButton />
         </Panel>
 

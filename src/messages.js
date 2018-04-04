@@ -39,4 +39,6 @@ export default {
   'vocab.work.local.collectionName': 'Moving Images',
   'field.works_common.termName.name': 'Title',
   'field.works_common.termQualifier.name': 'Article',
+
+  'field.media_common.title.name': 'File name',
 };
