@@ -55,14 +55,14 @@ const template = (pluginContext) => {
               </Field>
             </Field>
 
+            <Field name="genres" subpath="ns2:works_cinefiles">
+              <Field name="genre" />
+            </Field>
+
             <Field name="workDateGroupList">
               <Field name="workDateGroup">
                 <Field name="workDate" />
               </Field>
-            </Field>
-
-            <Field name="genres" subpath="ns2:works_cinefiles">
-              <Field name="genre" />
             </Field>
 
             <Field name="countries" subpath="ns2:works_cinefiles">
@@ -93,40 +93,6 @@ const template = (pluginContext) => {
             <Field name="workHistoryNote" />
           </Col>
         </Cols>
-
-        {/* TODO: Break out address group */}
-
-        <Field name="addrGroupList">
-          <Field name="addrGroup">
-            <Panel>
-              <Cols>
-                <Col>
-                  <Field name="addressPlace1" />
-                  <Field name="addressPlace2" />
-                  <Field name="addressMunicipality" />
-
-                </Col>
-
-                <Col>
-                  <Row>
-                    <Field name="addressStateOrProvince" />
-                    <Field name="addressPostCode" />
-                  </Row>
-
-                  <Field name="addressCountry" />
-
-                  <Row>
-                    <Col>
-                      <Field name="addressType" />
-                    </Col>
-
-                    <Col />
-                  </Row>
-                </Col>
-              </Cols>
-            </Panel>
-          </Field>
-        </Field>
       </Panel>
 
       <Panel name="hierarchy" collapsible collapsed>

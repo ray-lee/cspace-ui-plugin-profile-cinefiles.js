@@ -20,8 +20,8 @@ export const computeFullTitle = (article, title) => {
 };
 
 export const computeWorkDisplayName = ({ data }) => {
-  const article = data.get('termQualifier' || '');
-  const title = data.get('termName' || '');
+  const article = data.get('termQualifier') || '';
+  const title = data.get('termName') || '';
   const displayName = computeFullTitle(article, title);
 
   return data.set('termDisplayName', displayName);

@@ -86,7 +86,7 @@ export default (pluginContext) => {
               }),
               repeating: true,
               view: {
-                type: OptionPickerInput,
+                type: TermPickerInput,
                 props: {
                   source: 'language',
                 },

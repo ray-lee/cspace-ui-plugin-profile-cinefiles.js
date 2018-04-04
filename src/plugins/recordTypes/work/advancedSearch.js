@@ -15,11 +15,11 @@ export default (pluginContext) => {
     value: [
       {
         op: OP_CONTAIN,
-        path: 'ns2:works_common/workTermGroupList/workTermGroup/termDisplayName',
+        path: 'ns2:works_common/workTermGroupList/workTermGroup/termName',
       },
       {
         op: OP_CONTAIN,
-        path: 'ns2:works_common/workTermGroupList/workTermGroup/termName',
+        path: 'ns2:works_common/workTermGroupList/workTermGroup/termDisplayName',
       },
       {
         op: OP_EQ,
