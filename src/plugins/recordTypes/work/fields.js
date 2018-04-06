@@ -88,7 +88,7 @@ export default (pluginContext) => {
               view: {
                 type: TermPickerInput,
                 props: {
-                  source: 'language',
+                  source: 'languages',
                 },
               },
             },

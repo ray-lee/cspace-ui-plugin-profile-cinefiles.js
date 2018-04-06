@@ -19,7 +19,7 @@ export default (configContext) => {
           },
         }),
         order: 30,
-        sortBy: 'works_common:workTermGroupList/0/creator',
+        sortBy: 'works_common:creatorGroupList/0/creator',
         width: 250,
       },
     },
