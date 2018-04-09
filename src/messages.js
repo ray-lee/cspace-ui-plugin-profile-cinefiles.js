@@ -33,6 +33,10 @@ export default {
 
   'vocab.person.local.name': 'Person',
   'vocab.person.local.collectionName': 'Persons',
-
   'field.persons_common.birthPlace.name': 'Country of birth',
+
+  'vocab.work.local.name': 'Moving Image',
+  'vocab.work.local.collectionName': 'Moving Images',
+  'field.works_common.termName.name': 'Title',
+  'field.works_common.termQualifier.name': 'Article',
 };
