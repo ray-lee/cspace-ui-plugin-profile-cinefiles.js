@@ -150,12 +150,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
@@ -171,12 +165,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
@@ -192,12 +180,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
@@ -213,12 +195,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
@@ -234,12 +210,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
@@ -255,12 +225,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
@@ -276,12 +240,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
@@ -297,12 +255,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
@@ -318,12 +270,6 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
-            searchView: {
-              type: OptionPickerInput,
-              props: {
-                source: 'booleans',
-              },
-            },
             view: {
               type: CheckboxInput,
             },
