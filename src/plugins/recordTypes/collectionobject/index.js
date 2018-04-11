@@ -4,6 +4,7 @@ import optionLists from './optionLists';
 import messages from './messages';
 import idGenerators from './idGenerators';
 import title from './title';
+import advancedSearch from './advancedSearch';
 
 export default () => pluginContext => ({
   optionLists,
@@ -14,6 +15,7 @@ export default () => pluginContext => ({
       forms: forms(pluginContext),
       fields: fields(pluginContext),
       title: title(pluginContext),
+      advancedSearch: advancedSearch(pluginContext),
     },
   },
 });

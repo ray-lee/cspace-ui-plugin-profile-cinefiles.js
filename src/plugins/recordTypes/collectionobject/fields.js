@@ -53,7 +53,7 @@ export default (pluginContext) => {
               },
               fullName: {
                 id: 'field.collectionobjects_cinefiles.docTitle.fullName',
-                defaultMessage: 'Title namex',
+                defaultMessage: 'Title name',
               },
             }),
             required: true,
@@ -150,6 +150,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
@@ -165,6 +171,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
@@ -180,6 +192,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
@@ -195,6 +213,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
@@ -210,6 +234,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
@@ -225,6 +255,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
@@ -240,6 +276,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
@@ -255,6 +297,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
@@ -270,6 +318,12 @@ export default (pluginContext) => {
               },
             }),
             dataType: DATA_TYPE_BOOL,
+            searchView: {
+              type: OptionPickerInput,
+              props: {
+                source: 'booleans',
+              },
+            },
             view: {
               type: CheckboxInput,
             },
