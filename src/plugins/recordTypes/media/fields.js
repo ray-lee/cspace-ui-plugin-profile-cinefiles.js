@@ -11,25 +11,22 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   const {
-    Immutable,
-  } = configContext.lib;
-
-  const {
     DATA_TYPE_INT,
   } = configContext.dataTypes;
 
   return {
     document: {
-      [config]: {
-        compute: args => computeMediaTitle(args, Immutable),
-      },
       'ns2:media_common': {
         identificationNumber: {
           [config]: {
             required: false,
           },
         },
-        title: {},
+        title: {
+          [config]: {
+            compute: computeMediaTitle,
+          },
+        },
       },
       'ns2:media_cinefiles': {
         [config]: {
