@@ -119,13 +119,17 @@ const template = (pluginContext) => {
 
         {extensions.dimension.form}
         <Row>
-          <Field name="objectStatusList">
-            <Field name="objectStatus" />
-          </Field>
+          <Col>
+            <Field name="objectStatusList">
+              <Field name="objectStatus" />
+            </Field>
+          </Col>
 
-          <Field name="colors">
-            <Field name="color" />
-          </Field>
+          <Col>
+            <Field name="colors">
+              <Field name="color" />
+            </Field>
+          </Col>
         </Row>
 
 

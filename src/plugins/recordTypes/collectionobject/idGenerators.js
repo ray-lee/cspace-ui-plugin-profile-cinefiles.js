@@ -6,7 +6,7 @@ export default {
     messages: defineMessages({
       type: {
         id: 'idGenerator.document.type',
-        defaultMessage: 'CineFiles document number',
+        defaultMessage: 'CineFiles document',
       },
     }),
   },
@@ -15,7 +15,7 @@ export default {
     messages: defineMessages({
       type: {
         id: 'idGenerator.stills.type',
-        defaultMessage: 'PFA stills number',
+        defaultMessage: 'PFA still',
       },
     }),
   },

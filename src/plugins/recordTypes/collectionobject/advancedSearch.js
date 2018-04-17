@@ -48,7 +48,7 @@ export default (pluginContext) => {
       },
       {
         op: OP_RANGE,
-        path: 'ns2:collectionobjects_cinefiles/pageInfo',
+        path: 'ns2:collectionobjects_cinefiles/numberOfObjects',
       },
       {
         op: OP_EQ,

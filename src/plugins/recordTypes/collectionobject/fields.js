@@ -9,6 +9,7 @@ export default (pluginContext) => {
     TextInput,
     TermPickerInput,
     CheckboxInput,
+    URLInput,
   } = pluginContext.inputComponents;
 
   const {
@@ -67,9 +68,12 @@ export default (pluginContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_cinefiles.docDisplayName.name',
-                defaultMessage: 'Display Name',
+                defaultMessage: 'Display name',
               },
             }),
+            searchView: {
+              type: TextInput,
+            },
             view: {
               type: TextInput,
               props: {
@@ -155,7 +159,6 @@ export default (pluginContext) => {
             },
           },
         },
-        hasCastCrSearch: {},
         hasTechCr: {
           [config]: {
             messages: defineMessages({
@@ -170,13 +173,12 @@ export default (pluginContext) => {
             },
           },
         },
-        hasTechCrSearch: {},
         hasBoxInfo: {
           [config]: {
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_cinefiles.hasBoxInfo.name',
-                defaultMessage: 'Box Office.',
+                defaultMessage: 'Box office',
               },
             }),
             dataType: DATA_TYPE_BOOL,
@@ -185,7 +187,6 @@ export default (pluginContext) => {
             },
           },
         },
-        hasBoxInfoSearch: {},
         hasFilmog: {
           [config]: {
             messages: defineMessages({
@@ -200,7 +201,6 @@ export default (pluginContext) => {
             },
           },
         },
-        hasFilmogSearch: {},
         hasBiblio: {
           [config]: {
             messages: defineMessages({
@@ -215,7 +215,6 @@ export default (pluginContext) => {
             },
           },
         },
-        hasBiblioSearch: {},
         hasDistCo: {
           [config]: {
             messages: defineMessages({
@@ -230,7 +229,6 @@ export default (pluginContext) => {
             },
           },
         },
-        hasDistCoSearch: {},
         hasProdCo: {
           [config]: {
             messages: defineMessages({
@@ -245,13 +243,12 @@ export default (pluginContext) => {
             },
           },
         },
-        hasProdCoSearch: {},
         hasCostInfo: {
           [config]: {
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_cinefiles.hasCostInfo.name',
-                defaultMessage: 'Cost information',
+                defaultMessage: 'Cost info',
               },
             }),
             dataType: DATA_TYPE_BOOL,
@@ -260,13 +257,12 @@ export default (pluginContext) => {
             },
           },
         },
-        hasCostInfoSearch: {},
         hasIllust: {
           [config]: {
             messages: defineMessages({
               name: {
                 id: 'field.collectionobjects_cinefiles.hasIllust.name',
-                defaultMessage: 'With illustration',
+                defaultMessage: 'With illus.',
               },
             }),
             dataType: DATA_TYPE_BOOL,
@@ -275,7 +271,6 @@ export default (pluginContext) => {
             },
           },
         },
-        hasIllustSearch: {},
         docLanguages: {
           [config]: {
             view: {
@@ -318,7 +313,7 @@ export default (pluginContext) => {
               view: {
                 type: AutocompleteInput,
                 props: {
-                  source: 'person/local, organization/local, organization/committee',
+                  source: 'person/local,organization/local,organization/committee',
                 },
               },
             },
@@ -386,24 +381,28 @@ export default (pluginContext) => {
         collection: {
           [config]: {
             defaultValue: 'urn:cspace:cinefiles.cspace.berkeley.edu:vocabularies:name(collection):item:name(cinefiles)\'CineFiles\'',
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'collection',
+              },
+            },
           },
         },
         responsibleDepartments: {
           responsibleDepartment: {
             [config]: {
               defaultValue: 'urn:cspace:cinefiles.cspace.berkeley.edu:vocabularies:name(department):item:name(pfalibrary)\'PFA Library\'',
+              view: {
+                type: TermPickerInput,
+                props: {
+                  source: 'department',
+                },
+              },
             },
           },
         },
         referenceGroupList: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.collectionobjects_commmon.referenceGroupList.name',
-                defaultMessage: 'External document URL details',
-              },
-            }),
-          },
           referenceGroup: {
             reference: {
               [config]: {
@@ -414,6 +413,13 @@ export default (pluginContext) => {
                 },
               },
             },
+            referenceNote: {
+              [config]: {
+                view: {
+                  type: URLInput,
+                },
+              },
+            },
           },
         },
         contentConcepts: {
@@ -421,20 +427,7 @@ export default (pluginContext) => {
             [config]: {
               view: {
                 props: {
-                  source: 'concept/associated, concept/genre',
-                },
-              },
-            },
-          },
-        },
-        contentPersons: {
-          contentPerson: {
-            [config]: {
-              repeating: true,
-              view: {
-                type: AutocompleteInput,
-                props: {
-                  source: 'person/local',
+                  source: 'concept/associated,concept/genre',
                 },
               },
             },
@@ -443,11 +436,9 @@ export default (pluginContext) => {
         contentOrganizations: {
           contentOrganization: {
             [config]: {
-              repeating: true,
               view: {
-                type: AutocompleteInput,
                 props: {
-                  source: 'organization/local, organization/committee',
+                  source: 'organization/local,organization/committee',
                 },
               },
             },
@@ -464,16 +455,6 @@ export default (pluginContext) => {
                   },
                 },
                 defaultValue: 'urn:cspace:cinefiles.cspace.berkeley.edu:vocabularies:name(productionpersonrole):item:name(author)\'Author\'',
-              },
-            },
-          },
-        },
-        fieldCollectionPlace: {
-          [config]: {
-            view: {
-              type: AutocompleteInput,
-              props: {
-                source: 'place/local',
               },
             },
           },

@@ -6,30 +6,34 @@ import { defineMessages } from 'react-intl';
 // only operates on files that import react-intl.
 
 export default {
-  departments: {
+  recordStatuses: {
     values: [
-      'pfalibrary',
+      'temporary',
+      'new',
+      'in-process',
+      'approved',
+      'review-media',
     ],
     messages: defineMessages({
-      pfalibrary: {
-        id: 'option.departments.pfalibrary',
-        defaultMessage: 'PFA Library',
+      temporary: {
+        id: 'option.recordStatuses.temporary',
+        defaultMessage: 'Temporary',
       },
-    }),
-  },
-  collections: {
-    values: [
-      'cinefiles',
-      'pfastills',
-    ],
-    messages: defineMessages({
-      cinefiles: {
-        id: 'option.collections.cinefiles',
-        defaultMessage: 'CineFiles',
+      new: {
+        id: 'option.recordSratuses.new',
+        defaultMessage: 'New',
       },
-      pfastills: {
-        id: 'option.collections.pfastills',
-        defaultMessage: 'PFA stills',
+      'in-process': {
+        id: 'option.recordStatuses.in-process',
+        defaultMessage: 'In process',
+      },
+      approved: {
+        id: 'option.recordStatuses.approved',
+        defaultMessage: 'Approved',
+      },
+      'review-media': {
+        id: 'option.recordStatuses.review-media',
+        defaultMessage: 'Review media',
       },
     }),
   },
