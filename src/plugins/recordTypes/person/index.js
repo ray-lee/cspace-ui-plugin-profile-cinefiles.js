@@ -1,6 +1,6 @@
 import advancedSearch from './advancedSearch';
-import forms from './forms';
 import fields from './fields';
+import forms from './forms';
 import vocabularies from './vocabularies';
 
 export default () => pluginContext => ({

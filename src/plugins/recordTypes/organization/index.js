@@ -6,10 +6,10 @@ import vocabularies from './vocabularies';
 export default () => pluginContext => ({
   recordTypes: {
     organization: {
+      vocabularies,
       advancedSearch: advancedSearch(pluginContext),
       fields: fields(pluginContext),
       forms: forms(pluginContext),
-      vocabularies,
     },
   },
 });
