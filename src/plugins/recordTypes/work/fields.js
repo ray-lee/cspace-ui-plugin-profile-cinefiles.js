@@ -1,18 +1,18 @@
 import { defineMessages } from 'react-intl';
 import { computeWorkDisplayName } from '../utils';
 
-export default (pluginContext) => {
+export default (configContext) => {
   const {
     CompoundInput,
     TermPickerInput,
     TextInput,
     AutocompleteInput,
     OptionPickerInput,
-  } = pluginContext.inputComponents;
+  } = configContext.inputComponents;
 
   const {
     configKey: config,
-  } = pluginContext.configHelpers;
+  } = configContext.configHelpers;
 
   return {
     document: {

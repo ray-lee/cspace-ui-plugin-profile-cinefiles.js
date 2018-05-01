@@ -3,13 +3,13 @@ import fields from './fields';
 import forms from './forms';
 import title from './title';
 
-export default () => pluginContext => ({
+export default () => configContext => ({
   recordTypes: {
     media: {
-      advancedSearch: advancedSearch(pluginContext),
-      fields: fields(pluginContext),
-      forms: forms(pluginContext),
-      title: title(pluginContext),
+      advancedSearch: advancedSearch(configContext),
+      fields: fields(configContext),
+      forms: forms(configContext),
+      title: title(configContext),
     },
   },
 });

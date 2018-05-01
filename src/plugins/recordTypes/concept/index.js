@@ -1,11 +1,11 @@
 import advancedSearch from './advancedSearch';
 import vocabularies from './vocabularies';
 
-export default () => pluginContext => ({
+export default () => configContext => ({
   recordTypes: {
     concept: {
       vocabularies,
-      advancedSearch: advancedSearch(pluginContext),
+      advancedSearch: advancedSearch(configContext),
     },
   },
 });

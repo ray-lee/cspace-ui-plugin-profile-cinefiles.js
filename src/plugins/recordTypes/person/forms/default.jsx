@@ -1,19 +1,19 @@
-const template = (pluginContext) => {
+const template = (configContext) => {
   const {
     React,
-  } = pluginContext.lib;
+  } = configContext.lib;
 
   const {
     Col,
     Panel,
     Row,
-  } = pluginContext.layoutComponents;
+  } = configContext.layoutComponents;
 
   const {
     InputTable,
     Field,
     Subrecord,
-  } = pluginContext.recordComponents;
+  } = configContext.recordComponents;
 
   return (
     <Field name="document">
@@ -85,6 +85,6 @@ const template = (pluginContext) => {
   );
 };
 
-export default pluginContext => ({
-  template: template(pluginContext),
+export default configContext => ({
+  template: template(configContext),
 });

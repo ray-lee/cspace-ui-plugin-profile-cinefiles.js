@@ -3,13 +3,13 @@ import fields from './fields';
 import forms from './forms';
 import vocabularies from './vocabularies';
 
-export default () => pluginContext => ({
+export default () => configContext => ({
   recordTypes: {
     organization: {
       vocabularies,
-      advancedSearch: advancedSearch(pluginContext),
-      fields: fields(pluginContext),
-      forms: forms(pluginContext),
+      advancedSearch: advancedSearch(configContext),
+      fields: fields(configContext),
+      forms: forms(configContext),
     },
   },
 });

@@ -1,7 +1,7 @@
 import { defineMessages } from 'react-intl';
 import { computeDocDisplayName } from '../utils';
 
-export default (pluginContext) => {
+export default (configContext) => {
   const {
     AutocompleteInput,
     CompoundInput,
@@ -10,15 +10,15 @@ export default (pluginContext) => {
     TermPickerInput,
     CheckboxInput,
     URLInput,
-  } = pluginContext.inputComponents;
+  } = configContext.inputComponents;
 
   const {
     configKey: config,
-  } = pluginContext.configHelpers;
+  } = configContext.configHelpers;
 
   const {
     DATA_TYPE_BOOL,
-  } = pluginContext.dataTypes;
+  } = configContext.dataTypes;
 
   return {
     document: {
