@@ -15,25 +15,9 @@ export default {
       'review-media',
     ],
     messages: defineMessages({
-      temporary: {
-        id: 'option.recordStatuses.temporary',
-        defaultMessage: 'Temporary',
-      },
-      new: {
-        id: 'option.recordSratuses.new',
-        defaultMessage: 'New',
-      },
-      'in-process': {
-        id: 'option.recordStatuses.in-process',
-        defaultMessage: 'In process',
-      },
-      approved: {
-        id: 'option.recordStatuses.approved',
-        defaultMessage: 'Approved',
-      },
       'review-media': {
         id: 'option.recordStatuses.review-media',
-        defaultMessage: 'Review media',
+        defaultMessage: 'review media',
       },
     }),
   },
