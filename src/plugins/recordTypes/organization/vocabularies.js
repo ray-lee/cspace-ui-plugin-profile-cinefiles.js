@@ -1,6 +1,9 @@
 import { defineMessages } from 'react-intl';
 
 export default {
+  ulan: {
+    disabled: true,
+  },
   committee: {
     messages: defineMessages({
       name: {

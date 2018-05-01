@@ -1,6 +1,12 @@
 import { defineMessages } from 'react-intl';
 
 export default {
+  activity: {
+    disabled: true,
+  },
+  material: {
+    disabled: true,
+  },
   genre: {
     messages: defineMessages({
       name: {
