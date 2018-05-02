@@ -8,13 +8,13 @@ export default () => ({
     docDisplayName: {
       messages: defineMessages({
         label: {
-          id: 'column.collectionobject.cinefiles.docDisplayName',
+          id: 'column.collectionobject.default.docDisplayName',
           defaultMessage: 'Display name',
         },
       }),
       order: 20,
       sortBy: 'collectionobjects_cinefiles:docTitle',
-      width: 275,
+      width: 450,
     },
   },
   narrow: {
@@ -24,13 +24,13 @@ export default () => ({
     docDisplayName: {
       messages: defineMessages({
         label: {
-          id: 'column.collectionobject.cinefiles.docDisplayName',
+          id: 'column.collectionobject.narrow.docDisplayName',
           defaultMessage: 'Display name',
         },
       }),
       order: 20,
       sortBy: 'collectionobjects_cinefiles:docTitle',
-      width: 400,
+      width: 450,
     },
   },
 });
