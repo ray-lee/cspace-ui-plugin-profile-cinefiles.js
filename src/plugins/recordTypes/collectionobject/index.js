@@ -5,6 +5,7 @@ import fields from './fields';
 import idGenerators from './idGenerators';
 import messages from './messages';
 import optionLists from './optionLists';
+import sidebar from './sidebar';
 import title from './title';
 
 export default () => configContext => ({
@@ -13,6 +14,7 @@ export default () => configContext => ({
   recordTypes: {
     collectionobject: {
       messages,
+      sidebar,
       advancedSearch: advancedSearch(configContext),
       columns: columns(configContext),
       forms: forms(configContext),
