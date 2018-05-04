@@ -12,6 +12,7 @@ module.exports = () => ({
   logo,
   messages,
   className: styles.common,
+  mediaSnapshotSort: 'page',
   prettyUrls: true,
   tenantId: '50',
   pluginInfo: {
