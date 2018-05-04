@@ -1,3 +1,4 @@
+import blob from './blob';
 import citation from './citation';
 import concept from './concept';
 import location from './location';
@@ -9,6 +10,7 @@ import work from './work';
 import collectionobject from './collectionobject';
 
 export default [
+  blob,
   citation,
   collectionobject,
   concept,
