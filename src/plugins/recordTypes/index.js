@@ -8,6 +8,7 @@ import person from './person';
 import place from './place';
 import work from './work';
 import collectionobject from './collectionobject';
+import group from './group';
 
 export default [
   blob,
@@ -20,4 +21,5 @@ export default [
   person,
   place,
   work,
+  group,
 ];
