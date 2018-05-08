@@ -4,6 +4,8 @@ const template = (configContext) => {
   } = configContext.lib;
 
   const {
+    Col,
+    Cols,
     Panel,
     Row,
   } = configContext.layoutComponents;
@@ -21,8 +23,6 @@ const template = (configContext) => {
             <Panel>
               <Row>
                 <Field name="termDisplayName" />
-                <Field name="termName" />
-                <Field name="termQualifier" />
                 <Field name="termStatus" />
               </Row>
 
@@ -43,6 +43,16 @@ const template = (configContext) => {
             </Panel>
           </Field>
         </Field>
+
+        <Cols>
+          <Col>
+            <Field name="conceptRecordTypes">
+              <Field name="conceptRecordType" />
+            </Field>
+          </Col>
+
+          <Col />
+        </Cols>
 
         <InputTable name="scopeNote">
           <Field name="scopeNote" />
