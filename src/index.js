@@ -14,6 +14,7 @@ module.exports = () => ({
   className: styles.common,
   mediaSnapshotSort: 'page',
   prettyUrls: true,
+  relationMemberPerm: 'R',
   tenantId: '50',
   pluginInfo: {
     cspaceUIPluginProfileCineFiles: {
