@@ -1,6 +1,7 @@
 import blob from './blob';
 import citation from './citation';
 import concept from './concept';
+import contact from './contact';
 import location from './location';
 import media from './media';
 import organization from './organization';
@@ -15,6 +16,7 @@ export default [
   citation,
   collectionobject,
   concept,
+  contact,
   location,
   media,
   organization,
