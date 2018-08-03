@@ -14,7 +14,7 @@ export default {
   'footer.feedback': 'Contact UC Berkeley CollectionSpace support',
   'footer.feedbackUrl': 'mailto:cspace-support@lists.berkeley.edu',
 
-  'vocab.location.local.name': 'Location',
+  'vocab.location.local.name': 'Storage Location',
   'vocab.location.local.collectionName': 'Storage Locations',
 
   'vocab.place.local.name': 'Place',

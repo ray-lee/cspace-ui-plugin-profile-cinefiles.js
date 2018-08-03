@@ -12,7 +12,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'concept/ethculture,concept/genre,concept/associated,concept/theme',
+                    source: 'concept/genre,concept/associated,concept/theme',
                   },
                 },
               },

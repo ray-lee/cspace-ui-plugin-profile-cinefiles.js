@@ -7,6 +7,9 @@ export default {
   material: {
     disabled: true,
   },
+  ethculture: {
+    disabled: true,
+  },
   genre: {
     messages: defineMessages({
       name: {
