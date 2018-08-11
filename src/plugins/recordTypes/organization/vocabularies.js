@@ -4,7 +4,11 @@ export default {
   ulan: {
     disabled: true,
   },
+  local: {
+    disableAltTerms: true,
+  },
   committee: {
+    disableAltTerms: true,
     messages: defineMessages({
       name: {
         id: 'vocab.organization.committee.name',

@@ -10,7 +10,11 @@ export default {
   ethculture: {
     disabled: true,
   },
+  associated: {
+    disableAltTerms: true,
+  },
   genre: {
+    disableAltTerms: true,
     messages: defineMessages({
       name: {
         id: 'vocab.concept.genre.name',
@@ -28,6 +32,7 @@ export default {
     },
   },
   theme: {
+    disableAltTerms: true,
     messages: defineMessages({
       name: {
         id: 'vocab.concept.theme.name',
