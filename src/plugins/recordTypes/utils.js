@@ -25,7 +25,7 @@ export const computeWorkDisplayName = ({ data }) => {
   const termDisplayName = data.get('termDisplayName') || '';
   const computedDisplayName = computeFullTitle(article, title);
 
-  const displayName = (termDisplayName != '' && computedDisplayName === '') 
+  const displayName = (termDisplayName !== '' && computedDisplayName === '')
     ? termDisplayName : computedDisplayName;
 
   return data.set('termDisplayName', displayName);
