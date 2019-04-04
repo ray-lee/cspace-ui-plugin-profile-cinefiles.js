@@ -22,7 +22,11 @@ export const computeFullTitle = (article, title) => {
 export const computeWorkDisplayName = ({ data }) => {
   const article = data.get('termQualifier') || '';
   const title = data.get('termName') || '';
-  const displayName = computeFullTitle(article, title);
+  const termDisplayName = data.get('termDisplayName') || '';
+  const computedDisplayName = computeFullTitle(article, title);
+
+  const displayName = (termDisplayName != '' && computedDisplayName === '') 
+    ? termDisplayName : computedDisplayName;
 
   return data.set('termDisplayName', displayName);
 };
