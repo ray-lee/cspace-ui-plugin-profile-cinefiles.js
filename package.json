@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-profile-cinefiles",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "CineFiles profile plugin for the CollectionSpace UI",
   "author": "Ray Lee <rhlee@berkeley.edu>",
   "contributors": [
@@ -47,7 +47,7 @@
     "react-intl": "^2.3.0"
   },
   "devDependencies": {
-    "@ucb-cspace/cspace-ui": "2.3.0-ucb.1",
+    "@ucb-cspace/cspace-ui": "2.3.0-ucb.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.5",
