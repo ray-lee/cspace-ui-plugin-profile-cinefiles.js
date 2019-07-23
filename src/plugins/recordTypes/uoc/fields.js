@@ -1,5 +1,4 @@
 export default (configContext) => {
-
   const {
     configKey: config,
   } = configContext.configHelpers;
