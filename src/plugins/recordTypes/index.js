@@ -7,6 +7,7 @@ import media from './media';
 import organization from './organization';
 import person from './person';
 import place from './place';
+import uoc from './uoc';
 import work from './work';
 import collectionobject from './collectionobject';
 import group from './group';
@@ -22,6 +23,7 @@ export default [
   organization,
   person,
   place,
+  uoc,
   work,
   group,
 ];
