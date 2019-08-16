@@ -4,6 +4,9 @@ export default (configContext) => {
   const {
     CompoundInput,
     OptionPickerInput,
+    TermPickerInput,
+    DateInput,
+    AutocompleteInput,
   } = configContext.inputComponents;
 
   const {
@@ -26,11 +29,86 @@ export default (configContext) => {
               defaultMessage: 'Output format',
             },
           }),
+          required: true,
           view: {
             type: OptionPickerInput,
             props: {
               source: 'uocApprovalStatusMIMETypes',
             },
+          },
+        },
+      },
+      Requester: {
+        [config]: {
+          messages: defineMessages({
+            name: {
+              id: 'field.report.cinefilesUOCApprovalStatus.Requester.name',
+              defaultMessage: 'Requester',
+            },
+          }),
+          view: {
+            type: AutocompleteInput,
+            props: {
+              source: 'person/local,person/shared,organization/local,organization/shared,organization/committee',
+            },
+          },
+        }
+      },
+      AuthBy: {
+        [config]: {
+          messages: defineMessages({
+            name: {
+              id: 'field.report.cinefilesUOCApprovalStatus.AuthBy.name',
+              defaultMessage: 'Authorized by',
+            },
+          }),
+          view: {
+            type: AutocompleteInput,
+            props: {
+              source: 'person/local,person/shared,organization/local,organization/shared,organization/committee',
+            },
+          },
+        },
+      },
+      AuthStatus: {
+        [config]: {
+          messages: defineMessages({
+            name: {
+              id: 'field.report.cinefilesUOCApprovalStatus.AuthStatus.name',
+              defaultMessage: 'Authorization status',
+            },
+          }),
+          view: {
+            type: TermPickerInput,
+            props: {
+              source: 'uocauthorizationstatuses',
+            },
+          },
+        },
+      },
+      StartDate: {
+        [config]: {
+          messages: defineMessages({
+            name: {
+              id: 'field.report.cinefilesUOCApprovalStatus.StartDate.name',
+              defaultMessage: 'Earliest requested date',
+            },
+          }),
+          view: {
+            type: DateInput,
+          },
+        },
+      },
+      EndDate: {
+        [config]: {
+          messages: defineMessages({
+            name: {
+              id: 'field.report.cinefilesUOCApprovalStatus.EndDate.name',
+              defaultMessage: 'Latest requested date',
+            },
+          }),
+          view: {
+            type: DateInput,
           },
         },
       },
