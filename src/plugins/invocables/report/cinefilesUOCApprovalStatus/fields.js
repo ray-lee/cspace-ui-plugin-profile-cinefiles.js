@@ -50,6 +50,7 @@ export default (configContext) => {
             type: AutocompleteInput,
             props: {
               source: 'person/local,person/shared,organization/local,organization/shared,organization/committee',
+              showQuickAdd: false,
             },
           },
         },
@@ -66,6 +67,7 @@ export default (configContext) => {
             type: AutocompleteInput,
             props: {
               source: 'person/local,person/shared,organization/local,organization/shared,organization/committee',
+              showQuickAdd: false,
             },
           },
         },
