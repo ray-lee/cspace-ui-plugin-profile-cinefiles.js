@@ -52,7 +52,7 @@ export default (configContext) => {
               source: 'person/local,person/shared,organization/local,organization/shared,organization/committee',
             },
           },
-        }
+        },
       },
       AuthBy: {
         [config]: {
