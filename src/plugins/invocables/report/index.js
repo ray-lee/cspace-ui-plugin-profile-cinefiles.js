@@ -1,7 +1,7 @@
 import cinefilesUOCApprovalStatus from './cinefilesUOCApprovalStatus';
-import cinefilesUOCRequesterbyObject from './cinefilesUOCRequesterbyObject';
+import cinefilesUOCbyRequesterObject from './cinefilesUOCbyRequesterObject';
 
 export default [
   cinefilesUOCApprovalStatus,
-  cinefilesUOCRequesterbyObject,
+  cinefilesUOCbyRequesterObject,
 ];
