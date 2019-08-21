@@ -23,12 +23,16 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.cinefilesUOCRequesterbyObject.Requester.name',
+              id: 'field.cinefilesUOCbyRequesterObject.Requester.name',
               defaultMessage: 'Requester',
             },
           }),
           view: {
-            type: TextInput,
+            type: AutocompleteInput,
+            props: {
+              source: 'person/local,person/shared,organization/local,organization/shared,organization/committee',
+              showQuickAdd: false,
+            },
           },
         },
       },
@@ -36,15 +40,12 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.cinefilesUOCRequesterbyObject.ObjectNumber.name',
-              defaultMessage: 'ObjectNumber',
+              id: 'field.cinefilesUOCbyRequesterObject.ObjectNumber.name',
+              defaultMessage: 'Object number',
             },
           }),
           view: {
-            type: AutocompleteInput,
-            props: {
-              source: 'person/local,person/shared,organization/local,organization/shared',
-            },
+            type: TextInput,
           },
         },
       },
@@ -53,7 +54,7 @@ export default (configContext) => {
           defaultValue: 'application/pdf',
           messages: defineMessages({
             name: {
-              id: 'field.cinefilesUOCRequesterbyObject.OutputMIME.name',
+              id: 'field.cinefilesUOCbyRequesterObject.OutputMIME.name',
               defaultMessage: 'Output format',
             },
           }),
