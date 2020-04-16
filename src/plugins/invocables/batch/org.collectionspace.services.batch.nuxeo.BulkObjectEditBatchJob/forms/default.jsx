@@ -17,32 +17,19 @@ const template = (configContext) => {
       <Cols>
         <Col>
           <Field name="numberOfObjects" />
-          <Field name="contentDateGroup" />
-          <Field name="objectProductionDate" />
-
-          <Field name="responsibleDepartments">
-            <Field name="responsibleDepartment" />
-          </Field>
+          {/* <Field name="contentDateGroup" /> */}
+          {/* <Field name="objectProductionDate" /> */}
+          <Field name="responsibleDepartment" />
+          <Field name="objectStatus" />
         </Col>
 
         <Col>
-          <Field name="objectStatusList">
-            <Field name="objectStatus" />
-          </Field>
-
-          <Field name="contentPlaces">
-            <Field name="contentPlace" />
-          </Field>
-
-          <Field name="objectProductionPersonGroup">
-            <Field name="objectProductionPerson" />
-          </Field>
+          <Field name="contentPlace" />
+          <Field name="objectProductionPerson" />
         </Col>
       </Cols>
 
-      <Field name="briefDescriptions">
-        <Field name="briefDescription" />
-      </Field>
+      <Field name="briefDescription" />
     </Field>
   );
 };
