@@ -20,24 +20,6 @@ export default (configContext) => {
           type: CompoundInput,
         },
       },
-      OutputMIME: {
-        [config]: {
-          defaultValue: 'application/pdf',
-          messages: defineMessages({
-            name: {
-              id: 'field.report.cinefilesUOCApprovalStatus.OutputMIME.name',
-              defaultMessage: 'Output format',
-            },
-          }),
-          required: true,
-          view: {
-            type: OptionPickerInput,
-            props: {
-              source: 'uocApprovalStatusMIMETypes',
-            },
-          },
-        },
-      },
       AuthBy: {
         [config]: {
           messages: defineMessages({
