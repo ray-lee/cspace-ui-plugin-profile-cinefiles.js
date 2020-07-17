@@ -38,13 +38,16 @@ export default {
   'vocab.work.local.name': 'Moving Image',
   'vocab.work.local.collectionName': 'Moving Images',
   'field.works_common.termName.name': 'Title',
+  'field.works_common.termName.fullName': 'Title',
   'field.works_common.termQualifier.name': 'Article',
+  'field.works_common.termQualifier.fullName': 'Article',
 
   'field.media_common.title.name': 'File name',
 
   'panel.collectionobject.reference': 'External Document URL Information',
   'field.collectionobjects_common.reference.name': 'Source',
   'field.collectionobjects_common.referenceNote.name': 'URL',
+  'field.collectionobjects_common.referenceNote.fullName': 'URL',
   'field.collectionobjects_common.numberOfObjects.name': 'Number of pages',
 
 };
