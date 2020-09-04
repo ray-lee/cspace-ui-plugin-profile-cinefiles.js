@@ -66,7 +66,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.media_piction.primaryDisplay.name',
-                defaultMessage: 'Primary display',
+                defaultMessage: 'Primary display?',
               },
             }),
             view: {

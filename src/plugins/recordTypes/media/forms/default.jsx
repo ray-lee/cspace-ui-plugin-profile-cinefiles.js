@@ -25,6 +25,7 @@ const template = (configContext) => {
         <Cols>
           <Col>
             <Field name="page" subpath="ns2:media_cinefiles" />
+            <Field name="imageNumber" subpath="ns2:media_piction" />
           </Col>
 
           <Col>
@@ -46,6 +47,8 @@ const template = (configContext) => {
           <Col>
             <Field name="contributor" />
             <Field name="creator" />
+
+            <Field name="primaryDisplay" subpath="ns2:media_piction" />
 
             <Field name="languageList">
               <Field name="language" />
