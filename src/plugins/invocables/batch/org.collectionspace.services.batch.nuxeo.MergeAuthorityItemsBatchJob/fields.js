@@ -9,7 +9,7 @@ export default (configContext) => {
         [config]: {
           view: {
             props: {
-              source: 'citation/local,concept/genre,concept/theme,concept/associated,organization/local,organization/committee,person/local,place/local,location/local,work/local',
+              source: 'citation/local,concept/genre,concept/occasion,concept/theme,concept/associated,organization/local,organization/committee,person/local,place/local,location/local,work/local',
               showQuickAdd: false,
             },
           },
