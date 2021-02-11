@@ -4,8 +4,8 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   return {
-    params: {
-      targetCSID: {
+    document: {
+      target: {
         [config]: {
           view: {
             props: {
