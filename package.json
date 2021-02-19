@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-profile-cinefiles",
-  "version": "1.0.13",
+  "version": "1.0.14-rc.1",
   "description": "CineFiles profile plugin for the CollectionSpace UI",
   "author": "Ray Lee <rhlee@berkeley.edu>",
   "contributors": [
