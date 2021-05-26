@@ -4,7 +4,7 @@ import forms from './forms';
 export default () => configContext => ({
   invocables: {
     report: {
-      cinefilesUOCApprovalStatus: {
+      cinefilesUOCbyApprovalStatus: {
         fields: fields(configContext),
         forms: forms(configContext),
       },
