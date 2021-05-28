@@ -23,7 +23,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.cinefilesUOCApprovalStatus.AuthBy.name',
+              id: 'field.report.cinefilesUOCbyApprovalStatus.AuthBy.name',
               defaultMessage: 'Authorized by',
             },
           }),
@@ -40,7 +40,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.cinefilesUOCApprovalStatus.AuthStatus.name',
+              id: 'field.report.cinefilesUOCbyApprovalStatus.AuthStatus.name',
               defaultMessage: 'Authorization status',
             },
           }),
@@ -56,7 +56,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.cinefilesUOCApprovalStatus.StartDate.name',
+              id: 'field.report.cinefilesUOCbyApprovalStatus.StartDate.name',
               defaultMessage: 'Earliest requested date',
             },
           }),
@@ -69,7 +69,7 @@ export default (configContext) => {
         [config]: {
           messages: defineMessages({
             name: {
-              id: 'field.report.cinefilesUOCApprovalStatus.EndDate.name',
+              id: 'field.report.cinefilesUOCbyApprovalStatus.EndDate.name',
               defaultMessage: 'Latest requested date',
             },
           }),

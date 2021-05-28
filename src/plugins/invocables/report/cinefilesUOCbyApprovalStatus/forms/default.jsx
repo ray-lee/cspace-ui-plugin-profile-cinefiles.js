@@ -30,7 +30,7 @@ const template = (configContext) => {
 export default configContext => ({
   messages: defineMessages({
     name: {
-      id: 'form.report.cinefilesUOCApprovalStatus.default.name',
+      id: 'form.report.cinefilesUOCbyApprovalStatus.default.name',
       defaultMessage: 'Standard Template',
     },
   }),
