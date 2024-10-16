@@ -4,7 +4,7 @@ import fields from './fields';
 import forms from './forms';
 import title from './title';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     media: {
       advancedSearch: advancedSearch(configContext),

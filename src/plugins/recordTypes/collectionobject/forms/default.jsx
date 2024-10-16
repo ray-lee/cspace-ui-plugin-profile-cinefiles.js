@@ -140,7 +140,6 @@ const template = (configContext) => {
           </Col>
         </Row>
 
-
         <Field name="physicalDescription" />
 
         <Row>
@@ -153,7 +152,6 @@ const template = (configContext) => {
             </Field>
           </Col>
         </Row>
-
 
         <Panel name="content" collapsible collapsed>
           <Field name="contentDescription" />
@@ -243,6 +241,6 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   template: template(configContext),
 });

@@ -34,7 +34,6 @@ const template = (configContext) => {
                 <Col />
               </Row>
 
-
               <InputTable name="termSource">
                 <Field name="termSource" />
                 <Field name="termSourceDetail" />
@@ -61,8 +60,8 @@ const template = (configContext) => {
           </Col>
         </Cols>
 
-        <Field name="memberGroupList" subpath="ns2:organizations_cinefiles" >
-          <Field name="memberGroup" >
+        <Field name="memberGroupList" subpath="ns2:organizations_cinefiles">
+          <Field name="memberGroup">
             <Field name="member" />
             <Field name="memberNote" />
             <Field name="memberAuthority" />
@@ -79,6 +78,6 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   template: template(configContext),
 });

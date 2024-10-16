@@ -2,7 +2,7 @@ import advancedSearch from './advancedSearch';
 import vocabularies from './vocabularies';
 import forms from './forms';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     concept: {
       vocabularies,

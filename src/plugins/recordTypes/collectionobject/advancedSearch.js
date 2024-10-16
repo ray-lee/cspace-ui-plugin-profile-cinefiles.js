@@ -5,7 +5,6 @@ export default (configContext) => {
     OP_RANGE,
   } = configContext.searchOperators;
 
-
   const {
     defaultAdvancedSearchBooleanOp,
     extensions,

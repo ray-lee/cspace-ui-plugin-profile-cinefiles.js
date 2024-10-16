@@ -5,9 +5,9 @@ export const requiresFollowingSpace = (article) => {
   return (lastChar !== "'" && lastChar !== '-');
 };
 
-export const isBlank = string =>
-  (typeof (string) === 'undefined' || !nonWhitespacePattern.test(string));
-
+export const isBlank = (string) => (
+  typeof (string) === 'undefined' || !nonWhitespacePattern.test(string)
+);
 
 export const computeFullTitle = (article, title) => {
   let tileCopy = title;
