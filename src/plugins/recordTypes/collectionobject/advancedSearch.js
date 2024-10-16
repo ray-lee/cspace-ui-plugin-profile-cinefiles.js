@@ -48,7 +48,7 @@ export default (configContext) => {
       },
       {
         op: OP_RANGE,
-        path: 'ns2:collectionobjects_common/numberOfObjects',
+        path: 'ns2:collectionobjects_common/objectCountGroupList/objectCountGroup/objectCount',
       },
       {
         op: OP_EQ,

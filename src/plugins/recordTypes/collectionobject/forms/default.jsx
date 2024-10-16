@@ -56,7 +56,6 @@ const template = (configContext) => {
             <Field name="source" subpath="ns2:collectionobjects_cinefiles" />
             <Row>
               <Col>
-                <Field name="numberOfObjects" />
                 <Field name="accessCode" subpath="ns2:collectionobjects_cinefiles" />
               </Col>
 
@@ -65,6 +64,15 @@ const template = (configContext) => {
                 <Field name="recordStatus" />
               </Col>
             </Row>
+
+            <Field name="objectCountGroupList">
+              <Field name="objectCountGroup">
+                <Field name="objectCount" />
+                <Field name="objectCountCountedBy" />
+                <Field name="objectCountDate" />
+                <Field name="objectCountNote" />
+              </Field>
+            </Field>
 
             <Field name="briefDescriptions">
               <Field name="briefDescription" />
