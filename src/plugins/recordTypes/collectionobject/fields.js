@@ -459,9 +459,22 @@ export default (configContext) => {
             },
           },
         },
-        numberOfObjects: {
+        objectCountGroupList: {
           [config]: {
+            messages: defineMessages({
+              required: {
+                id: 'field.collectionobjects_common.objectCountGroupList.required',
+                defaultMessage: 'Number of pages is required. Please enter a value.',
+              },
+            }),
             required: true,
+          },
+          objectCountGroup: {
+            objectCount: {
+              [config]: {
+                required: true,
+              },
+            },
           },
         },
       },

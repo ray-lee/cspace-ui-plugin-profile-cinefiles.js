@@ -5,7 +5,6 @@ export default (configContext) => {
     OP_RANGE,
   } = configContext.searchOperators;
 
-
   const {
     defaultAdvancedSearchBooleanOp,
     extensions,
@@ -48,7 +47,7 @@ export default (configContext) => {
       },
       {
         op: OP_RANGE,
-        path: 'ns2:collectionobjects_common/numberOfObjects',
+        path: 'ns2:collectionobjects_common/objectCountGroupList/objectCountGroup/objectCount',
       },
       {
         op: OP_EQ,

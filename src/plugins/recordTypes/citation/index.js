@@ -1,7 +1,7 @@
 import fields from './fields';
 import vocabularies from './vocabularies';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     citation: {
       vocabularies,

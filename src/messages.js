@@ -48,6 +48,10 @@ export default {
   'field.collectionobjects_common.reference.name': 'Source',
   'field.collectionobjects_common.referenceNote.name': 'URL',
   'field.collectionobjects_common.referenceNote.fullName': 'URL',
-  'field.collectionobjects_common.numberOfObjects.name': 'Number of pages',
-
+  'field.collectionobjects_common.objectCountGroup.name': 'Number of pages',
+  'field.collectionobjects_common.objectCount.fullName': 'Number of pages value',
+  'field.collectionobjects_common.objectCountType.fullName': 'Number of pages type',
+  'field.collectionobjects_common.objectCountCountedBy.fullName': 'Number of pages counted by',
+  'field.collectionobjects_common.objectCountDate.fullName': 'Number of pages date',
+  'field.collectionobjects_common.objectCountNote.fullName': 'Number of pages note',
 };

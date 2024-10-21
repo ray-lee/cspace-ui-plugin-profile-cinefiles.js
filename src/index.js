@@ -8,7 +8,7 @@ import plugins from './plugins';
 import logo from '../images/logo.png';
 import styles from '../styles/cspace-ui-plugin-profile/cinefiles.css';
 
-module.exports = () => ({
+export default () => ({
   logo,
   messages,
   className: styles.common,
@@ -27,5 +27,5 @@ module.exports = () => ({
       version: cspaceUIPluginProfileCineFiles.packageVersion,
     },
   },
-  plugins: plugins.map(plugin => plugin()),
+  plugins: plugins.map((plugin) => plugin()),
 });

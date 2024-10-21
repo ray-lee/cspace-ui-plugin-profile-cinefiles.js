@@ -1,4 +1,4 @@
-export default configContext => (data) => {
+export default (configContext) => (data) => {
   const {
     getPart,
   } = configContext.recordDataHelpers;
@@ -20,5 +20,5 @@ export default configContext => (data) => {
     titleParts.push(cinefilesData.get('docDisplayName'));
   }
 
-  return titleParts.filter(part => !!part).join(' - ');
+  return titleParts.filter((part) => !!part).join(' - ');
 };

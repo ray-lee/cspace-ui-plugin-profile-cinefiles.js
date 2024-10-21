@@ -8,7 +8,7 @@ import optionLists from './optionLists';
 import sidebar from './sidebar';
 import title from './title';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   idGenerators,
   optionLists,
   recordTypes: {

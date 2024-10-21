@@ -9,7 +9,6 @@ export default (configContext) => {
     CompoundInput,
   } = configContext.inputComponents;
 
-
   const {
     configKey: config,
   } = configContext.configHelpers;
